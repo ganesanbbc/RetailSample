@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cognizant.sample.ProductDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+        android:id="@+id/prdname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+       <ImageView
+           android:id="@+id/product_img"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/prdname"/>
+       <TextView
+           android:id="@+id/currency"
+           android:text="Rs. "
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/product_img"/>
+       <TextView
+           android:id="@+id/product_price"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/currency"
+           android:layout_below="@+id/product_img"
+           />
+       <Button
+           android:id="@+id/add_cart"
+           android:text="Add to Card"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/currency"/>
+   </RelativeLayout>
+</FrameLayout>
